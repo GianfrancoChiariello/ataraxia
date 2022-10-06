@@ -1,0 +1,59 @@
+export const Products = [
+    {"id":1,
+    "producto":"pelota",
+    "precio":2000,
+    "categoria":"deportivo",
+    "stock":4,
+    "imgUrl":"https://source.unsplash.com/random/300x300/?img=1"
+},
+    {"id":2,
+    "producto":"camiseta",
+    "precio":3000,
+    "categoria":"running",
+    "stock":1,
+    "imgUrl":"https://source.unsplash.com/random/300x300/?img=1"
+},
+    {"id":3,
+    "producto":"medias",
+    "precio":2460,
+    "categoria":"deportivo",
+    "stock":2,
+    "imgUrl":"https://source.unsplash.com/random/300x300/?img=1"
+},
+    {"id":4,
+    "producto":"short",
+    "precio":1560,
+    "totalPrice":0,
+    "categoria":"running",
+    "stock":7,
+    "imgUrl":"https://source.unsplash.com/random/300x300/?img=1"
+},
+    {"id":5,
+    "producto":"pantalon",
+    "precio":8650,
+    "categoria":"deportivo",
+    "stock":3,
+    "imgUrl":"https://source.unsplash.com/random/300x300/?img=1"
+},
+    {"id":6,
+    "producto":"casco",
+    "precio":2460,
+    "categoria":"deportivo",
+    "stock":9,
+    "imgUrl":"https://source.unsplash.com/random/300x300/?img=1"
+},
+    {"id":7,
+    "producto":"ropa",
+    "precio":1560,
+    "categoria":"running",
+    "stock":6,
+    "imgUrl":"https://source.unsplash.com/random/300x300/?img=1"
+},
+    {"id":8,
+    "producto":"felpas",
+    "precio":8650,
+    "categoria":"running",
+    "stock":2,
+    "imgUrl":"https://source.unsplash.com/random/300x300/?img=1"
+}
+]

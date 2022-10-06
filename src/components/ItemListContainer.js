@@ -1,8 +1,19 @@
-    const ItemListContainer = ({message}) => {
+import { useParams, NavLink } from 'react-router-dom'
+import {useEffect, useState} from "react"
 
-        return(
-        <h1>{message}</h1>
-        );
-    }
+
+function ItemListContainer (props){
+    const [state, setState] = useState([])
+
+    console.log(state)
     
-    export default ItemListContainer;
+    return(
+        <div className="itemlistcontainer">
+            <ul>
+                <li>Bienvenidos!</li>
+            </ul>
+        </div>
+    )
+}
+
+export default ItemListContainer

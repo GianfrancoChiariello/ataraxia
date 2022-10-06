@@ -1,36 +1,24 @@
     import CartWidget from "./CartWidget";
-
-    const NavBar = () => {
+    import logo from "../assets/logo.jpeg";
+    import { Link } from "react-router-dom";
+    
+    const NavBar = ({}) => {
     return (
-        <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
-        <div className="container-fluid">
-            <label className="navbar-brand" >Ataraxia</label>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-                <li className="nav-item">
-                <a href="#" className="nav-link active" aria-current="page">Home</a>
-                </li>
-                <div className="btn-group">
-                <button type="button" className="btn text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Productos
-                </button>
-                <ul className="dropdown-menu">
-                    <li><label className="dropdown-item">Cursos</label></li>
-                    <li><label className="dropdown-item">Sahumerios</label></li>
-                    <li><label className="dropdown-item">Perfumes</label></li>
-                </ul>
-                </div>
-            </ul>
+        <header>
+            <div className="logo">
+                <img src={logo} alt="logo"></img>
+                <span>andromeda</span>
             </div>
-            <span className="navbar-text">
-            <CartWidget></CartWidget>
-            </span>
-        </div>
-        </nav>
-    );
-    }
+            <nav className="navbar">
+                <ul className="ul">
+                    <li className="li"><Link to="/">Home</Link></li>
+                    <li className="li"><Link to={`/items/:id`}>Productos</Link></li>
+                    <li className="li"><Link to="/contacto">Contacto</Link></li>
+                </ul>
+                <CartWidget></CartWidget>
+            </nav>
+        </header>
+    )
+}
 
-    export default NavBar;
+export default NavBar;

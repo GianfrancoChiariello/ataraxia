@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  width: 100%;
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo img {
+  width: 6vw;
+}
+header .logo span {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .li a {
+  text-decoration: none;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  margin: 0 0.5rem;
+  list-style: none;
+  font-weight: 600;
+}
+header nav .fa-cart-shopping {
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+
+.itemlistcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.itemlistcontainer ul {
+  display: flex;
+}
+.itemlistcontainer ul li {
+  list-style: none;
+  margin: 1rem;
+}
+.itemlistcontainer ul li h1 {
+  font-size: 1.2rem;
+}
+
+.list-container {
+  margin: 2rem 0;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+.list-container .productos {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+.list-container .productos input {
+  border: none;
+  box-shadow: none;
+  max-width: 2vw;
+  text-align: center;
+}
+.list-container .productos .counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+.list-container .productos button {
+  border: none;
+}
+.list-container .productos .agregar {
+  margin: 0 1rem;
+  padding: 0 0.2rem;
+}
+.list-container .productos h3 {
+  text-transform: capitalize;
+}
+.list-container .productos img {
+  max-width: 15vw;
+}
+
+.btnsr button {
+  width: 20px;
+}
+
+.productos_h1, .title {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.counter {
+  display: flex;
+  margin: 0.5rem;
+}
+
+/*# sourceMappingURL=App.css.map */
