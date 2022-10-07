@@ -1,18 +1,32 @@
 import { useParams, NavLink } from 'react-router-dom'
 import {useEffect, useState} from "react"
+import {fetchDates} from "../json/fetchDates"
+import ItemList from "./ItemList"   
 
 
-function ItemListContainer (props){
-    const [state, setState] = useState([])
+function ItemListContainer (){
+    const [items, setItems] = useState([])
 
-    console.log(state)
+    const { categoryId } = useParams()
     
-    return(
-        <div className="itemlistcontainer">
-            <ul>
-                <li>Bienvenidos!</li>
-            </ul>
-        </div>
+    useEffect(() => {
+        fetchDates()
+            .then((resp) => {
+                if (!categoryId) {
+                    setItems( resp )
+                } else {
+                    setItems( resp.filter((item) => item.categoria === categoryId) )
+                }
+            })
+            .catch((error) => {
+                console.log('ERROR', error)
+            })
+    }, [categoryId])
+
+    return (
+        <section className="container">
+            <ItemList items={items}/>
+        </section>
     )
 }
 

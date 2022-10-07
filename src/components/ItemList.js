@@ -1,11 +1,19 @@
-function ItemList({items}){
-    return(
-        <div>
-            {items.length < 0 ?
-            <div>
+import Item from "./Item"
 
-            </div>    
-        :<p>No hay productos</p>}
+
+
+const ItemList = ( {items} ) => {
+
+    return (
+        <div>
+            <h2>Nuestro productos</h2>
+            <hr/>
+
+            {
+                items.map((item) => <Item key={item.id} item={item}/>)
+            }
         </div>
     )
 }
+
+export default ItemList

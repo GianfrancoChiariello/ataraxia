@@ -5,15 +5,12 @@
     const NavBar = ({}) => {
     return (
         <header>
-            <div className="logo">
-                <img src={logo} alt="logo"></img>
-                <span>andromeda</span>
-            </div>
+            <Link to={"/"}><div className="logo"><img src={logo} alt="logo"></img><span>andromeda</span></div></Link>
+            
             <nav className="navbar">
                 <ul className="ul">
-                    <li className="li"><Link to="/">Home</Link></li>
-                    <li className="li"><Link to={`/items/:id`}>Productos</Link></li>
-                    <li className="li"><Link to="/contacto">Contacto</Link></li>
+                    <li className="li"><Link to={"/categorias/deportivo"}>Deportivo</Link></li>
+                    <li className="li"><Link to={"/categorias/running"}>Running</Link></li>
                 </ul>
                 <CartWidget></CartWidget>
             </nav>
