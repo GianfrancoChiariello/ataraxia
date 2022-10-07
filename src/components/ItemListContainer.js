@@ -4,7 +4,7 @@ import {fetchDates} from "../json/fetchDates"
 import ItemList from "./ItemList"   
 
 
-function ItemListContainer (){
+export const ItemListContainer = () => {
     const [items, setItems] = useState([])
 
     const { categoryId } = useParams()
@@ -29,5 +29,3 @@ function ItemListContainer (){
         </section>
     )
 }
-
-export default ItemListContainer
